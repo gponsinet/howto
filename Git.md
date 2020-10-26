@@ -47,7 +47,3 @@ Copy the content of your public key in `~/.ssh/id_ed25519.pub`.
 Go to https://github.com/settings/ssh/new.
 Paste the public key content in the form.
 Go to https://github.com/YOUR_USERNAME.keys to see your keys.
-
-## Usage
-
-In progress
