@@ -17,6 +17,7 @@ cd $YOUR_PROJECT
 volta install node@15
 volta pin node@15
 npm init -y
+echo 'node_modules' >> .gitignore
 ```
 
 ## Transpiling
@@ -40,7 +41,8 @@ echo 'module.exports = (api) => {
 cd $YOUR_PROJECT
 volta install eslint-cli
 npm install --save-dev eslint_d @babel/eslint-parser @react-native-community/eslint-config
-ln -sf eslint node_modules/.bin/eslint_d
+ln -sf eslint_d node_modules/.bin/eslint
+git add -f node_modules/.bin/eslint
 
 echo 'const path = require('path')
 module.exports = {
